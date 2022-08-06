@@ -1,0 +1,319 @@
+.content-header {
+  display: flex;
+  max-width: 917px;
+  width: 100%;
+  height: 420px;
+  flex-direction: column;
+  margin: 223px auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.socail__logo {
+  max-width: 2.5vw;
+  max-height: 40px;
+}
+
+.subtitle__header {
+  margin-top: 1vh;
+  color: white;
+  width: 100%;
+}
+
+.bottom {
+  width: 2.5vw;
+  height: 2.5vw;
+  margin-top: 240px !important;
+  margin-bottom: 50px !important;
+  margin: 0 auto;
+}
+
+.line {
+  width: 100px;
+  border: 1px solid #2C4058;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  &__gallery {
+    margin-bottom: 0px;
+  }
+
+  &__news {
+    border: 1px solid white;
+  }
+
+  &__contact {
+    margin-top: 60px;
+  }
+}
+
+.content-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project__title {
+  display: flex;
+  margin: 0 auto;
+
+  &__contact {
+  margin-left: 219px;
+  margin-bottom: 42px;
+  }
+}
+
+.project1 {
+  max-width: 786.6vw;
+  width: 100%;
+  margin-top: 89px;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+
+  &__img {
+    display: flex;
+    max-width: 845px;
+    max-height: 528.4px;
+    
+  }
+  .img1 {
+    box-shadow: -215px -57px #55B7FF;
+    margin-left: 215px;
+  }
+
+  .img2 {
+    box-shadow: 215px -57px #7E5AFF;
+    margin-left: 64px;
+  }
+
+  &__content {
+    margin-left: 70px;
+    padding-top: 200px;
+    flex-direction: column;
+  }
+
+  &__text {
+    width: 470px !important;
+    width: 100%;
+    margin-top: 19px;
+    @include content-text;
+    margin-bottom: 41px;
+  }
+}
+
+.btn {
+  width: 190px;
+  height: 50px !important;
+  border: 1px solid $subtitle-color;
+  background: transparent;
+  @include flex-center;
+  margin-bottom: 60px;
+
+  &__gallery {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+
+.map_link {
+  width: 278px;
+  height: 20px;
+  color: black;
+}
+
+.project2 {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 215px;
+  justify-content: space-between;
+}
+
+
+.content-gallery {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery-img {
+  margin-top: 89px;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 0 auto;  
+}
+
+  .div1 { 
+    grid-area: 1 / 1 / 3 / 3;
+    max-width: 580px;
+    max-height: 438px;
+  }
+
+  .div2 { 
+    grid-area: 1 / 3 / 2 / 4;
+    @include gallery-img; 
+  }
+
+  .div3 { 
+    grid-area: 1 / 4 / 2 / 5;
+    @include gallery-img; 
+  }
+
+  .div4 { 
+    grid-area: 2 / 4 / 3 / 5;
+    @include gallery-img; 
+  }
+  
+  .div5 { 
+    grid-area: 2 / 3 / 3 / 4;
+    @include gallery-img; 
+  }
+
+.footer {
+  &__credit {
+    width: 241px;
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 204px;
+    margin-left: 415px;
+    
+    .footer-text {
+        margin-top: 41px;
+    }
+    .social {
+      display: flex;
+      flex-direction: row;
+      margin-left: 369px;
+      gap: 20px;
+    }
+  }  
+}
+
+.slider-news {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 89px;
+
+}
+
+.news__card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 370px;
+  height: auto;
+  margin-left: 30px;
+  background: white;
+  &--photo {
+    width: 370px;
+    height: 240px;
+  }
+}
+
+.news-content {
+  margin: 30px 0 0 20px;
+  width: 330px !important;
+  height: 50px !important;
+  text-align: left;
+
+  &__text {
+    margin-top: 15px;
+  }
+
+  &__autor {
+    width: auto;
+    height: 60px;
+    margin-top: 39px;
+    display: flex;   
+    flex-direction: row;
+    gap: 20px;
+
+    &--name {
+      display: flex;
+    }
+
+    &--data {
+      color: #55B7FF;
+      margin-top: 6px;
+    }
+  }
+}
+
+.avatar {
+   display: block;
+  border-radius: 50%;
+}
+
+.slick-track {
+  margin-bottom: 70px;
+}
+
+.contact-form {
+  display: block;
+  width: 790px;
+  height: 450px;
+  background-color: white;
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 30%; 
+}
+
+.contact__item {
+  max-height: 195px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+  margin: 0 auto;
+
+  &--1 {
+    max-width: 286px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &--2 {
+    max-width: 310px;    
+  }
+}
+
+input[type=text] {
+  max-width: 310px;
+  max-height: 40px;
+  border: 1px;
+  border-bottom: 1px solid $subtitle-color;
+}
+
+input[type=email] {
+  max-width: 310px;
+  height: 40px;
+  border: 1px;
+  color: #4B5562;
+  border-bottom: 1px solid  #4B5562;;
+  opacity: 0.5;
+  margin-top: 30px;
+}
+
+.btn-contact {
+  width: 140px;
+  height: 50px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  float: right;
+  background: transparent;
+  border: 1px solid $subtitle-color;
+}

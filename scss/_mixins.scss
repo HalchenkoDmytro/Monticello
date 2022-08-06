@@ -1,0 +1,37 @@
+@mixin flex-center {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin subTitle {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53.6px;
+  color: $subtitle-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin mini-subtitle {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26.82px;
+  color: $subtitle-color;
+  text-transform: uppercase;
+}
+
+@mixin content-text {
+  font-family: $text-font;
+  color: $subtitle-color;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@mixin gallery-img {
+  max-width: 285px;
+  max-height: 214px;
+}
